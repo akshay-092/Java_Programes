@@ -14,7 +14,7 @@ To explore the programs in this repository, simply browse through the directorie
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/yourusername/java_programs.git
+   git clone https://github.com/akshay-092/java_programs.git
    ```
    
 2. **Navigate to Program Directory**: Go to the directory of the program you want to run, for example:
