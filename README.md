@@ -9,25 +9,6 @@ Welcome to the Java Programs Repository! This repository contains a collection o
 
 To explore the programs in this repository, simply browse through the directories and files organized by topics or difficulty levels. Each program is contained within its own directory along with a README file (if necessary) providing additional details.
 
-## Directory Structure
-
-The repository is structured as follows:
-
-```
-java_programs_repository/
-│
-├── basics/
-│   ├── FahrenheitToCelsius.java
-│
-├── intermediate/
-├── advanced/
-├── README.md
-└── LICENSE
-```
-
-- **basics/**: Contains programs that cover basic Java concepts such as variables, loops, and functions.
-- **intermediate/**: Includes programs that delve into more advanced topics like file I/O, data structures, and algorithms.
-- **advanced/**: Provides programs demonstrating advanced Java features such as multithreading, design patterns, and database connectivity.
 
 ## Running Programs
 
@@ -43,8 +24,8 @@ java_programs_repository/
 
 3. **Compile and Run**: Compile the Java file using `javac` and run the compiled class using `java`, for example:
    ```
-   javac HelloWorld.java
-   java HelloWorld
+   javac Factorial.java
+   java Factorial
    ```
 
 4. **Follow Program Instructions**: Follow the instructions printed on the console to interact with the program.
@@ -57,9 +38,5 @@ Contributions to this repository are welcome! If you have a Java program that yo
 - Ensure your code is well-commented and follows best practices.
 - Add your program to the appropriate directory based on its complexity and topic.
 - Create a pull request with a clear description of your changes.
-
-## License
-
-This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
 
 ---
