@@ -2,13 +2,22 @@ package Basic;
 
 import java.util.Scanner;
 
+/**
+ * This program checks if a given number is a palindrome.
+ * A palindrome number is a number that remains the same when its digits are reversed.
+ */
 public class Palindrome {
+    /**
+     * Main method, the entry point of the program.
+     */
     public static void main(String[] args) {
-        // Scanner object to read input from the user
+        // Create a Scanner object to read input from the user
         Scanner input = new Scanner(System.in);
         
+        // Prompt the user to enter a number
         System.out.println("Enter your Number: ");
-        // Read user input
+        
+        // Read the user input
         int num = input.nextInt(); 
         
         // Store the original number for comparison later
@@ -29,14 +38,14 @@ public class Palindrome {
             num = num / 10; 
         }
         
-        // Checking if the original number is equal to its reverse
+        // Check if the original number is equal to its reverse
         if (originalNum == reverseNum) {
             System.out.println("Palindrome");
         } else {
             System.out.println("Not Palindrome");
         }
         
-        // Close the Scanner to prevent resource leak
+        // Close the Scanner to release resources
         input.close(); 
     }
 }

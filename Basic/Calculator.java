@@ -2,10 +2,16 @@ package Basic;
 
 import java.util.Scanner;
 
+/**
+ * A simple calculator that performs basic arithmetic operations.
+ * It continuously takes input from the user for two numbers and an operator
+ * to perform the calculation until the user decides to exit.
+ */
 public class Calculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        // Main loop to keep the calculator running until user decides to exit
         while (true) {
             // Input for the first number
             System.out.println("Input Your First Number: ");
@@ -45,25 +51,34 @@ public class Calculator {
                 break; // Exit the while loop when 'X' or 'x' is entered
             } else if (op == '+' || op == '-' || op == '%' || op == '*' || op == '/') {
                 // Perform the calculation based on the operator
-                double ans = 0;
-                if (op == '+') {
-                    ans = num1 + num2;
-                } else if (op == '-') {
-                    ans = num1 - num2;
-                } else if (op == '*') {
-                    ans = num1 * num2;
-                } else if (op == '/') {
-                    // Check for division by zero
-                    if (num2 == 0) {
-                        System.out.println("Error: Division by zero.");
-                        continue; // Restart the loop
-                    }
-                    ans = num1 / num2;
-                } else if (op == '%') {
-                    ans = num1 % num2;
+                double result = 0;
+                switch (op) {
+                    case '+':
+                        result = num1 + num2;
+                        break;
+                    case '-':
+                        result = num1 - num2;
+                        break;
+                    case '*':
+                        result = num1 * num2;
+                        break;
+                    case '/':
+                        // Check for division by zero
+                        if (num2 == 0) {
+                            System.out.println("Error: Division by zero.");
+                            continue; // Restart the loop
+                        }
+                        result = num1 / num2;
+                        break;
+                    case '%':
+                        result = num1 % num2;
+                        break;
+                    default:
+                        // Should not reach here
+                        break;
                 }
                 // Output the result
-                System.out.println("Answer is: " + ans);
+                System.out.println("Answer is: " + result);
             } else {
                 System.out.println("Invalid Operator. Please enter a valid operator.");
             }

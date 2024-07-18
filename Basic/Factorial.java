@@ -1,11 +1,12 @@
 package Basic;
+
 import java.util.Scanner;
 
 /**
  * This program calculates the factorial of a given number entered by the user.
  */
 public class Factorial {
-    
+
     public static void main(String[] args) {
         // Create a Scanner object to read input from the user
         Scanner input = new Scanner(System.in);
@@ -19,8 +20,8 @@ public class Factorial {
         // Variable to store the factorial, initialized to 1
         long factorial = 1L;
         
-        // Calculate factorial of the number using a for loop
-        for(int i = 1; i <= num; i++) {
+        // Calculate the factorial of the number using a for loop
+        for (int i = 1; i <= num; i++) {
             factorial *= i;
         }
         
